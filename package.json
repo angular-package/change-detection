@@ -1,11 +1,58 @@
 {
-  "name": "change-detection",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^13.2.0",
-    "@angular/core": "^13.2.0"
+  "name": "@angular-package/detection",
+  "version": "1.0.0-alpha",
+  "author": "@angular-package <contact@angular-package.dev>",
+  "description": "Detection in property on demand to improve application performance.",
+  "main": "./index.scss",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
-  "dependencies": {
-    "tslib": "^2.3.0"
+  "devDependencies": {
+    "stylelint": "^15.10.3",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-order": "^6.0.3"
+  },
+  "scripts": {
+    "prepublishOnly": "npm install rimraf && npm run pkg && npm run clean",
+    "pkg": "npm pkg delete dependencies",
+    "clean": "./node_modules/rimraf/dist/esm/bin.mjs ./node_modules && npm pkg delete scripts",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-package/detection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular-package/detection/issues"
+  },
+  "keywords": [
+    "@angular-package",
+    "change detection",
+    "detection",
+    "detector",
+    "detection strategy"
+  ],
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://checkout.revolut.com/pay/048b10a3-0e10-42c8-a917-e3e9cb4c8e29"
+    },
+    {
+      "type": "individual",
+      "url": "https://docs.angular-package.dev/donate/cryptocurrency"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/angularpackage"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/angular-package"
+    }
+  ],
+  "peerDependencies": {
+    "@angular-package/property": "^1.0.2-alpha"
   }
 }
