@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/change-detection",
+  "dest": "../../dist/detection",
   "lib": {
     "entryFile": "src/public-api.ts"
   }
