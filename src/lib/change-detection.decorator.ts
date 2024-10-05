@@ -1,12 +1,26 @@
 // internal
 import { configureDetector } from './configure-detector.func';
-import { DetectionProperties } from '../interface/detection-properties.interface';
+
+// Interface.
 import { DetectorOptions } from '../interface/detector-options.interface';
 
-export function ChangeDetection<C>(
-  properties: DetectionProperties,
+// Type.
+import { DetectionProperties } from '../type/detection-properties.type';
+
+/**
+ * Decorator.
+ * @param properties 
+ * @param options 
+ * @returns 
+ */
+export function ChangeDetection<Cmp extends Object | Function>({}: {
+  properties: DetectionProperties<Cmp>,
   options?: DetectorOptions
-): ClassDecorator {
+}): ClassDecorator {
   return (component: Function): any =>
-    configureDetector<C>(component, properties, options);
+    configureDetector<Cmp>(
+      component,
+      arguments[0].properties,
+      arguments[0].options,
+    );
 }
