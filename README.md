@@ -131,6 +131,37 @@ How do I know when to release 1.0.0?
 
 MIT © angular-package ([license][detection-license])
 
+## Packages
+
+Useful and simple to use packages.
+
+| Package                                      | Description                                                       | Status |
+| :------------------------------------------- | :---------------------------------------------------------------- | -----: |
+| [callback][callback-github-readme]           | Manages the callback [`function`][js-function].                   | [![npm version][callback-npm-badge-png]][callback-npm-badge] |
+| [change-detection][cd-github-readme]         | Improves application performance.                                 | [![npm version][cd-npm-badge-png]][cd-npm-badge] |
+| [component-loader][cl-github-readme]         | Handles dynamic loading components.                               | [![npm version][cl-npm-badge-png]][cl-npm-badge] |
+| [core][core-github-readme]                   | Core features.                                                    | [![npm version][core-npm-badge-png]][core-npm-badge] |
+| [error][error-github-readme]                 | Manages an [`Error`][js-error].                                   | [![npm version][error-npm-badge-png]][error-npm-badge] |
+| [indexeddb][indexeddb-github-readme]         | Wrapper to IndexedDB client-side storage.                         | [![npm version][indexeddb-npm-badge-png]][indexeddb-npm-badge] |
+| name                                         | The name with prefix and suffix.                                  | ![inprogress] |
+| preferences                                  | Preferences, settings, options, configuration and setup in steps. | ![inprogress] |
+| [prism][prism-github-readme]                 | [`Prism`][prism-js] highlighter module.                           | [![npm version][prism-npm-badge-png]][prism-npm-badge] |
+| [property][property-github-readme]           | Handles object properties.                                        | [![npm version][property-npm-badge-png]][property-npm-badge] |
+| [range][range-github-readme]                 | The range between a minimum and maximum.                          | [![npm version][range-npm-badge-png]][range-npm-badge] |
+| [reactive][reactive-github-readme]           | Automatize the process of creating some rxjs features.            | [![npm version][reactive-npm-badge-png]][reactive-npm-badge] |
+| [sass][sass-github-readme]                   | Extension for sass modules and new modules.                       | [![npm version][sass-npm-badge-png]][sass-npm-badge] |
+| [sass-list][sass-list-github-readme]         | Modified list Sass module.                                        | [![npm version][sass-list-npm-badge-png]][sass-list-npm-badge] |
+| [sass-string][sass-string-github-readme]     | Modified string Sass module.                                      | [![npm version][sass-string-npm-badge-png]][sass-string-npm-badge] |
+| [spectre.css][spectrecss-github-readme]      | Modified Spectre.css - a lightweight, responsive, and modern CSS framework originally designed by Yan Zhu. | [![npm version][spectrecss-npm-badge-png]][spectrecss-npm-badge] |
+| storage                                      | The storage of data under allowed names.                          | ![inprogress] |
+| tag                                          | Any tag with optional attributes.                                 | ![inprogress] |
+| [testing][testing-github-readme]             | Support for testing other packages.                               | [![npm version][testing-npm-badge-png]][testing-npm-badge] |
+| text                                         | Text on the template with replaceable tags.                       | ![inprogress] |
+| [type][type-github-readme]                   | Common types, type guards, and type checkers.                     | [![npm version][type-npm-badge-png]][type-npm-badge] |
+| [ui][ui-github-readme]                       | User interface.                                                   | [![npm version][ui-npm-badge-png]][ui-npm-badge] |
+| [wrapper][wrapper-github-readme]             | Wrap the text with the opening and closing chars.                 | [![npm version][wrapper-npm-badge-png]][wrapper-npm-badge] |
+
+
 <!-- Funding -->
 [github-badge-sponsor]: https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&link=https://github.com/sponsors/angular-package
 [github-sponsor-link]: https://github.com/sponsors/angular-package
@@ -168,7 +199,7 @@ MIT © angular-package ([license][detection-license])
 [git-commit-karma]: http://karma-runner.github.io/0.10/dev/git-commit-msg.html
 [git-commit-conventional]: https://www.conventionalcommits.org/en/v1.0.0/
 
-<!-- This package: sass  -->
+<!-- This package: detection  -->
   <!-- GitHub: badges -->
   [detection-badge-issues]: https://img.shields.io/github/issues/angular-package/detection
   [detection-badge-forks]: https://img.shields.io/github/forks/angular-package/detection
@@ -182,12 +213,235 @@ MIT © angular-package ([license][detection-license])
 <!-- This package -->
   [detection-github-changelog]: https://github.com/angular-package/detection/blob/main/CHANGELOG.md
 
-<!-- Package: detection -->
+<!-- Package: callback -->
   <!-- npm -->
-  [detection-npm-badge-svg]: https://badge.fury.io/js/@angular-package%2Fchange-detection.svg
-  [detection-npm-badge-png]: https://badge.fury.io/js/@angular-package%2Fchange-detection.png
-  [detection-npm-badge]: https://badge.fury.io/js/@angular-package%2Fchange-detection
-  [detection-npm-readme]: https://www.npmjs.com/package/@angular-package/change-detection#readme
+  [callback-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fcallback.svg
+  [callback-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fcallback.png
+  [callback-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fcallback
+  [callback-npm-readme]: https://www.npmjs.com/package/@angular-package/callback#readme
 
   <!-- GitHub -->
-  [detection-github-readme]: https://github.com/angular-package/detection#readme
+  [callback-github-readme]: https://github.com/angular-package/callback#readme
+
+  [package-callback-callbackpayload]: https://github.com/angular-package/callback#callbackpayload
+  [package-callback-resultcallback]: https://github.com/angular-package/callback#resultcallback
+
+<!-- Package: change-detection -->
+  <!-- npm -->
+  [cd-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fchange-detection.svg
+  [cd-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fchange-detection.png
+  [cd-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fchange-detection
+  [cd-npm-readme]: https://www.npmjs.com/package/@angular-package/change-detection#readme
+
+  <!-- GitHub -->
+  [cd-github-readme]: https://github.com/angular-package/change-detection#readme
+
+<!-- Package: component-loader -->
+  <!-- npm -->
+  [cl-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fcomponent-loader.svg
+  [cl-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fcomponent-loader.png
+  [cl-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fcomponent-loader
+  [cl-npm-readme]: https://www.npmjs.com/package/@angular-package/component-loader#readme
+
+  <!-- GitHub -->
+  [cl-github-readme]: https://github.com/angular-package/component-loader#readme
+
+<!-- Package: core -->
+  <!-- npm -->
+  [core-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fcore.svg
+  [core-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fcore.png
+  [core-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fcore
+  [core-npm-readme]: https://www.npmjs.com/package/@angular-package/core#readme
+
+  <!-- GitHub -->
+  [core-github-readme]: https://github.com/angular-package/core#readme
+
+<!-- Package: error -->
+  <!-- npm -->
+  [error-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Ferror.svg
+  [error-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Ferror.png
+  [error-npm-badge]: https://badge.fury.io/js/%40angular-package%2Ferror
+  [error-npm-readme]: https://www.npmjs.com/package/@angular-package/error#readme
+
+  <!-- GitHub -->
+  [error-github-readme]: https://github.com/angular-package/error#readme
+
+<!-- Package: indexeddb -->
+  <!-- npm -->
+  [indexeddb-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Findexeddb.svg
+  [indexeddb-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Findexeddb.png
+  [indexeddb-npm-badge]: https://badge.fury.io/js/%40angular-package%2Findexeddb
+  [indexeddb-npm-readme]: https://www.npmjs.com/package/@angular-package/indexeddb#readme
+
+  <!-- GitHub -->
+  [indexeddb-github-readme]: https://github.com/angular-package/indexeddb#readme
+
+<!-- Package: name -->
+  <!-- npm -->
+  [name-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fname.svg
+  [name-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fname.png
+  [name-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fname
+  [name-npm-readme]: https://www.npmjs.com/package/@angular-package/name#readme
+
+  <!-- GitHub -->
+  [name-github-readme]: https://github.com/angular-package/name#readme
+
+<!-- Package: preferences -->
+  <!-- npm -->
+  [preferences-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fpreferences.svg
+  [preferences-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fpreferences.png
+  [preferences-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fpreferences
+  [preferences-npm-readme]: https://www.npmjs.com/package/@angular-package/preferences#readme
+
+  <!-- GitHub -->
+  [preferences-github-readme]: https://github.com/angular-package/preferences#readme
+
+<!-- Package: prism -->
+  <!-- npm -->
+  [prism-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fprism.svg
+  [prism-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fprism.png
+  [prism-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fprism
+  [prism-npm-readme]: https://www.npmjs.com/package/@angular-package/prism#readme
+
+  <!-- GitHub -->
+  [prism-github-readme]: https://github.com/angular-package/prism#readme
+
+<!-- Package: property -->
+  <!-- npm -->
+  [property-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fproperty.svg
+  [property-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fproperty.png
+  [property-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fproperty
+  [property-npm-readme]: https://www.npmjs.com/package/@angular-package/property#readme
+
+  <!-- GitHub -->
+  [property-github-readme]: https://github.com/angular-package/property#readme
+
+<!-- Package: range -->
+  <!-- npm -->
+  [range-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Frange.svg
+  [range-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Frange.png
+  [range-npm-badge]: https://badge.fury.io/js/%40angular-package%2Frange
+  [range-npm-readme]: https://www.npmjs.com/package/@angular-package/range#readme
+
+  <!-- GitHub -->
+  [range-github-readme]: https://github.com/angular-package/range#readme
+
+<!-- Package: reactive -->
+  <!-- npm -->
+  [reactive-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Freactive.svg
+  [reactive-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Freactive.png
+  [reactive-npm-badge]: https://badge.fury.io/js/%40angular-package%2Freactive
+  [reactive-npm-readme]: https://www.npmjs.com/package/@angular-package/reactive#readme
+
+  <!-- GitHub -->
+  [reactive-github-readme]: https://github.com/angular-package/reactive#readme
+
+<!-- Package: sass -->
+  <!-- npm -->
+  [sass-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fsass.svg
+  [sass-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fsass.png
+  [sass-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fsass
+  [sass-npm-readme]: https://www.npmjs.com/package/@angular-package/sass#readme
+
+  <!-- GitHub -->
+  [sass-github-readme]: https://github.com/angular-package/sass#readme
+
+<!-- Package: sass-list -->
+  <!-- npm -->
+  [sass-list-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fsass-list.svg
+  [sass-list-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fsass-list.png
+  [sass-list-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fsass-list
+  [sass-list-npm-readme]: https://www.npmjs.com/package/@angular-package/sass-list#readme
+
+  <!-- GitHub -->
+  [sass-list-github-readme]: https://github.com/angular-package/sass-string#readme
+
+<!-- Package: sass-string -->
+  <!-- npm -->
+  [sass-string-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fsass-string.svg
+  [sass-string-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fsass-string.png
+  [sass-string-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fsass-string
+  [sass-string-npm-readme]: https://www.npmjs.com/package/@angular-package/sass-string#readme
+
+  <!-- GitHub -->
+  [sass-string-github-readme]: https://github.com/angular-package/sass-string#readme
+
+<!-- Package: spectre.css -->
+  <!-- npm -->
+  [spectrecss-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fspectrecss.svg
+  [spectrecss-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fspectrecss.png
+  [spectrecss-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fspectre.css
+  [spectrecss-npm-readme]: https://www.npmjs.com/package/@angular-package/spectre.css#readme
+
+  <!-- GitHub -->
+  [spectrecss-github-readme]: https://github.com/angular-package/spectre.css#readme
+
+<!-- Package: storage -->
+  <!-- npm -->
+  [storage-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fstorage.svg
+  [storage-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fstorage.png
+  [storage-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fstorage
+  [storage-npm-readme]: https://www.npmjs.com/package/@angular-package/storage#readme
+
+  <!-- GitHub -->
+  [storage-github-readme]: https://github.com/angular-package/storage#readme
+
+<!-- Package: tag -->
+  <!-- npm -->
+  [tag-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Ftag.svg
+  [tag-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Ftag.png
+  [tag-npm-badge]: https://badge.fury.io/js/%40angular-package%2Ftag
+  [tag-npm-readme]: https://www.npmjs.com/package/@angular-package/tag#readme
+
+  <!-- GitHub -->
+  [tag-github-readme]: https://github.com/angular-package/tag#readme
+
+<!-- Package: testing -->
+  <!-- npm -->
+  [testing-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Ftesting.svg
+  [testing-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Ftesting.png
+  [testing-npm-badge]: https://badge.fury.io/js/%40angular-package%2Ftesting
+  [testing-npm-readme]: https://www.npmjs.com/package/@angular-package/testing#readme
+
+  <!-- GitHub -->
+  [testing-github-readme]: https://github.com/angular-package/testing#readme
+
+<!-- Package: text -->
+  <!-- npm -->
+  [text-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Ftext.svg
+  [text-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Ftext.png
+  [text-npm-badge]: https://badge.fury.io/js/%40angular-package%2Ftext
+  [text-npm-readme]: https://www.npmjs.com/package/@angular-package/text#readme
+
+  <!-- GitHub -->
+  [text-github-readme]: https://github.com/angular-package/text#readme
+
+<!-- Package: type -->
+  <!-- npm -->
+  [type-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Ftype.svg
+  [type-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Ftype.png
+  [type-npm-badge]: https://badge.fury.io/js/%40angular-package%2Ftype
+  [type-npm-readme]: https://www.npmjs.com/package/@angular-package/type#readme
+  [package-type-resultcallback]: https://github.com/angular-package/type#resultcallback
+
+  <!-- GitHub -->
+  [type-github-readme]: https://github.com/angular-package/type#readme
+
+<!-- Package: ui -->
+  <!-- npm -->
+  [ui-npm-badge-svg]: https://badge.fury.io/js/%40angular-package%2Fui.svg
+  [ui-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fui.png
+  [ui-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fui
+  [ui-npm-readme]: https://www.npmjs.com/package/@angular-package/ui#readme
+
+  <!-- GitHub -->
+  [ui-github-readme]: https://github.com/angular-package/ui#readme
+
+<!-- Package: wrapper -->
+  <!-- npm -->
+  [wrapper-npm-badge-png]: https://badge.fury.io/js/%40angular-package%2Fwrapper.png
+  [wrapper-npm-badge]: https://badge.fury.io/js/%40angular-package%2Fwrapper
+  [wrapper-npm-readme]: https://www.npmjs.com/package/@angular-package/wrapper#readme
+
+  <!-- GitHub -->
+  [wrapper-github-readme]: https://github.com/angular-package/wrapper#readme
