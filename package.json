@@ -9,6 +9,9 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
+  "peerDependencies": {
+    "@angular-package/property": "^1.0.2-alpha"
+  },
   "devDependencies": {
     "stylelint": "^15.10.3",
     "stylelint-config-prettier-scss": "^1.0.0",
@@ -51,8 +54,5 @@
       "type": "github",
       "url": "https://github.com/sponsors/angular-package"
     }
-  ],
-  "peerDependencies": {
-    "@angular-package/property": "^1.0.2-alpha"
-  }
+  ]
 }
