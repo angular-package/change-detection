@@ -173,9 +173,10 @@ Useful and simple to use packages.
 
 <!-- Update status -->
 [experimental]: https://img.shields.io/badge/-Experimental-orange
-[fix]: https://img.shields.io/badge/-Fix-red
-[new]: https://img.shields.io/badge/-eNw-green
-[update]: https://img.shields.io/badge/-Update-red
+[fix]: https://img.shields.io/badge/-fix-red
+[new]: https://img.shields.io/badge/-new-green
+[update]: https://img.shields.io/badge/-update-red
+[inprogress]: https://img.shields.io/badge/-In%20progress-gray
 [documentation]: https://img.shields.io/badge/-Documentation-informational
 [demonstration]: https://img.shields.io/badge/-Demonstration-green
 
