@@ -13,14 +13,14 @@ import { DetectionProperties } from '../type/detection-properties.type';
  * @param options 
  * @returns 
  */
-export function ChangeDetection<Cmp extends Object | Function>({}: {
+export function ChangeDetection<Cmp extends Object | Function>(
   properties: DetectionProperties<Cmp>,
-  options?: DetectorOptions
-}): ClassDecorator {
+  options?: Partial<DetectorOptions>
+): ClassDecorator {
   return (component: Function): any =>
     configureDetector<Cmp>(
       component,
-      arguments[0].properties,
-      arguments[0].options,
+      properties,
+      options as any,
     );
 }

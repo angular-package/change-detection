@@ -6,7 +6,10 @@ export type DetectionProperties<Cmp extends Object | Function> = Partial<Omit<{
 },
   'changeDetector' |
   'changeDetectorRef' |
+  'detach' |
   'detached' |
+  'detect' |
   'detection' |
-  'properties'
+  'properties' |
+  'reattach'
 >>;

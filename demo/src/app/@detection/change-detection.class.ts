@@ -2,11 +2,9 @@
 import { ChangeDetectorRef } from '@angular/core';
 
 // Property.
-// import { Property } from '../../../../../property/src/lib';
 import { Property } from '@angular-package/property';
 
 // Type.
-// import { SetterCallback } from '../../../../../property/src/type';
 import { SetterCallback } from '@angular-package/property';
 import { DetectionProperties } from './type/detection-properties.type';
 
@@ -16,6 +14,7 @@ import { DetectionProperties } from './type/detection-properties.type';
 export class ChangeDetection<Cmp extends object | Function> {
   /**
    * Deactivated properties.
+   * @angularpackage
    */
   public get deactivated(): Set<keyof Cmp> {
     return this.#deactivated;
@@ -39,7 +38,7 @@ export class ChangeDetection<Cmp extends object | Function> {
   }
 
   /**
-   * 
+   * @angularpackage
    */
   public get properties() {
     return this.#properties;
@@ -52,21 +51,25 @@ export class ChangeDetection<Cmp extends object | Function> {
 
   /**
    * Deactivated properties.
+   * @angularpackage
    */
   #deactivated: Set<keyof Cmp> = new Set();
 
   /**
    * Component detection status.
+   * @angularpackage
    */
   #detection = false;
 
   /**
    * Private property of `Property` handles inject detection to specified properties.
+   * @angularpackage
    */
   #property!: Property<Cmp, keyof Cmp>;
 
   /**
    * Detection properties.
+   * @angularpackage
    */
   #properties: DetectionProperties<Cmp> = {};
 
@@ -118,6 +121,23 @@ export class ChangeDetection<Cmp extends object | Function> {
    */
   public deactivate(...keys: (keyof Cmp)[]): this {
     Array.isArray(keys) && keys.forEach(key => this.#deactivated.add(key));
+    return this;
+  }
+
+  /**
+   * 
+   * @param key 
+   * @returns 
+   * @angularpackage
+   */
+  public detect(key?: keyof Cmp): this {
+    if (key) {
+      if (this.isDeactivated(key) === false) {
+        this.#changeDetectorRef.detectChanges();
+      }
+    } else {
+      this.#changeDetectorRef.detectChanges();
+    }
     return this;
   }
 

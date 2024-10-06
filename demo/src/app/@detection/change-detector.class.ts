@@ -5,7 +5,6 @@ import { ChangeDetectorRef } from '@angular/core';
 import { ChangeDetection } from './change-detection.class';
 
 // Type.
-// import { SetterCallback } from '../../../../../property/src/type';
 import { SetterCallback } from '@angular-package/property';
 
 /**
@@ -70,9 +69,6 @@ export class ChangeDetector<Cmp extends object | Function> {
       // Set the detector to use.
       this.#detector = component[this.#changeDetectorRefKey] as any;
 
-      // Detach component on initialize to use `detectChanges()`.
-      this.detach();
-
       // Detection.
       this.#detection = new ChangeDetection(
         this.#changeDetectorRefKey,
@@ -80,6 +76,9 @@ export class ChangeDetector<Cmp extends object | Function> {
         keys,
         callbackFn
       );
+
+      // Detach component on initialize to use `detectChanges()`.
+      this.detach();
     }
   }
 
@@ -89,7 +88,16 @@ export class ChangeDetector<Cmp extends object | Function> {
    * @angularpackage
    */
   public detach(): this {
-    setTimeout(() => this.#detector && (this.#detector.detach(), (this.#detached = true)), 0);
+    (setTimeout(() => this.#detector && this.#detector.detach(), 0), this.#detached = true);
+    return this;
+  }
+
+  /**
+   * 
+   * @returns 
+   */
+  public detect(key?: keyof Cmp): this {
+    setTimeout(() => this.#detector && this.#detection.detect(key), 0);
     return this;
   }
 
@@ -99,7 +107,7 @@ export class ChangeDetector<Cmp extends object | Function> {
    * @angularpackage
    */
   public reattach(): this {
-    setTimeout(() => this.#detector && (this.#detector.reattach(), (this.#detached = false)));
+    (setTimeout(() => this.#detector && this.#detector.reattach()), this.#detached = false);
     return this;
   }
 
