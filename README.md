@@ -6,9 +6,13 @@
 
 The angular-package supports the development process of [angular](https://angular.io)-based applications in varied ways through the thoughtful, reusable, easy-to-use small pieces of code called packages.
 
+<br>
+
+<a href="https://angular.io"><img src="https://raw.githubusercontent.com/angular-package/detection/refs/heads/2.0.0/angular_gradient.png" width="92" height="92" /></a>
+
 ## Detection
 
-Improve application performance.
+Detection in property on change to improve application performance.
 
 [![Gitter][gitter-badge]][gitter-chat]
 [![Discord][discord-badge]][discord-channel]
@@ -26,7 +30,6 @@ Improve application performance.
 <!-- Sponsors -->
 [![GitHub Sponsors][github-badge-sponsor]][github-sponsor-link]
 [![Patreon Sponsors][patreon-badge]][patreon-link]
-
 
 <br>
 
@@ -47,6 +50,7 @@ The package is **free** to use. If you enjoy it, please consider donating via [f
   * [Versioning](#versioning)
 * [License](#license)
 
+
 <br>
 
 ## Skeleton
@@ -60,7 +64,7 @@ Copy this package to the `packages/detection` folder of the [skeleton workspace]
 ## Code scaffolding
 
 Run `ng generate component component-name --project detection` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project detection`.
-> Note: Don't forget to add `--project detection` or else it will be added to the default project in your `angular.json` file. 
+> Note: Don't forget to add `--project detection` or else it will be added to the default project in your `angular.json` file.
 
 ### Build
 
@@ -180,10 +184,10 @@ MIT © angular-package ([license][detection-license])
 
 <!-- Package: detection -->
   <!-- npm -->
-  [detection-npm-badge-svg]: https://badge.fury.io/js/@angular-package%2Fdetection.svg
-  [detection-npm-badge-png]: https://badge.fury.io/js/@angular-package%2Fdetection.png
-  [detection-npm-badge]: https://badge.fury.io/js/@angular-package%2Fdetection
-  [detection-npm-readme]: https://www.npmjs.com/package/@angular-package/detection#readme
+  [detection-npm-badge-svg]: https://badge.fury.io/js/@angular-package%2Fchange-detection.svg
+  [detection-npm-badge-png]: https://badge.fury.io/js/@angular-package%2Fchange-detection.png
+  [detection-npm-badge]: https://badge.fury.io/js/@angular-package%2Fchange-detection
+  [detection-npm-readme]: https://www.npmjs.com/package/@angular-package/change-detection#readme
 
   <!-- GitHub -->
   [detection-github-readme]: https://github.com/angular-package/detection#readme
